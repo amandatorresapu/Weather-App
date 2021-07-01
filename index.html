@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <title>weather app</title>
@@ -27,17 +27,21 @@
         <div class="row">
           <div class="col">
             <form id="search-form">
-              <button type="button" class="btn btn-secondary col-2 current">
+              <button
+                type="button"
+                class="btn btn-secondary col-2 current"
+                id="button"
+              >
                 Current
               </button>
-              <button type="submit" class="btn btn-primary search">
+              <button type="submit" class="btn btn-primary search" id="button">
                 Search
               </button>
               <input
                 class="col-8"
                 type="text"
                 placeholder="Search for city"
-                id="search-text-input"
+                id="search-city-input"
               />
             </form>
             <h2>Time</h2>
@@ -49,16 +53,22 @@
       <div class="row box-city-tempature">
         <div class="col-6">
           <div class="card city">
-            <div class="card-body">Merced, ca</div>
+            <div class="card-body" id="name"></div>
+            <h5 id="location"></h5>
             <span class="temp" id="tempature"></span>
             <span class="units">
-              <a href="#" id="fair">F</a>
+              <a href="#" id="fair">F |</a>
               <a href="#" id="celsius"> C</a>
             </span>
           </div>
         </div>
         <div class="card tempature col-4">
-          <div class="card-body">98 <span>&#176;</span>☀️</div>
+          <div class="card-body"><span></span></div>
+          <ul>
+            <li><span id="description"></span></li>
+            <li>humidity: <span id="hum"></span></li>
+            <li>wind: <span id="wind"></span></li>
+          </ul>
         </div>
         <div class="container five-day-bar">
           <div class="row">
@@ -90,7 +100,7 @@
         </div>
       </div>
 
-      <script src="app.js"></script>
+      <script src="src/index.js"></script>
     </body>
   </head>
 </html>
