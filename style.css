@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 50px 50px;
+}
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: purple;
+}
+h2 {
+  text-align: center;
+}
+
+input {
+  background-color: lightgray;
+}
+
+.city {
+  padding: 50px;
+  margin: 20px;
+  font-size: 30px;
+  text-align: center;
+  border-color: orangered;
+  background-color: #ffe2d9;
+  color: orangered;
+}
+.search {
+  background-color: lightblue;
+  color: black;
+}
+.btn-secondary {
+  background-color: lightgray;
+  color: gray;
+}
+.tempature {
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+  border-color: orangered;
+  background-color: #ffe2d9;
+  color: orangered;
+}
+
+.box-city-tempature {
+  color: black;
+  margin: 0 auto;
+}
+.five-day-bar {
+  padding: 20px 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+.forecast {
+  margin: 0;
+  background-color: #ffedd4;
+}
+.five-day {
+  color: orange;
+}
+.dates {
+  font-size: smaller;
+  text-align: center;
+  padding: 30px;
+  border-color: orange;
+  color: orange;
+  background-color: #ffedd4;
+}
